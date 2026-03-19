@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+      <style>
+        
+        .back{
+             background-image: url(hostel.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h2{
+            font-style: italic;
+            font-size: 50px;
+            color: rgb(32, 12, 186);
+
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #1e6bd6;
+            color: white;
+            border-radius: 8px;
+            font-size: 16px;
+            font-size: 20px;   
+            width: 300px;      
+            margin: 10px;     
+            padding: 15px;
+            
+        }
+        .blur{
+           
+            background: #fff;
+            padding: 3px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(1px);
+            color: black;
+        }
+
+      </style>
+</head>
+<body>
+     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SAITM</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="register.html">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">login</a>
+        </li>    
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="back">
+    <div class="blur">
+    <div class="container px-5">
+        <h2 class="text-center">Registration Form</h2>
+        <div class="border border-5 mb-5 mt-5 p-4">
+            <form action="send.php" method="post">
+            <table class="table">
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" class="form-control" required name="name"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" class="form-control" required name="email"></td>
+                </tr>
+                <tr><td>Password</td>
+                <td><input type="password" class="form-control" required name="pwd"></td></tr>
+                
+                
+                <tr><td>City</td>
+                <td><select name="city" class="form-control" name="city">
+                    <option value="">select city</option>
+                    <option value="patna">patna</option>
+                    <option value="delhi">delhi</option>
+                    <option value="gurgaon">Gurgaon</option>
+                    <option value="noida">noida</option>
+              </td>  </tr>
+               <tr> 
+                <td>branch</td>
+                <td><input type="text" class="form-control" required name="branch">
+              </tr>
+              <tr><td colspan="2" class=" text-center px-5"><button type="submit">submit</button></td></tr>
+            </table></form>
+        </div>
+    </div>
+    </div>
+</div>
+    
+</body>
+</html>
